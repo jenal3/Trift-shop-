@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Shop - Aesthetic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Playfair+Display:italic,wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="login-page" class="page active">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h2>Welcome Back</h2>
+                    <p>Enter your details to explore the collection</p>
+                </div>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label>Username</label>
+                        <input type="text" id="username" placeholder="Your name..." required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <p id="error-msg" class="error-text"></p>
+                    <button type="submit" class="btn-login">Sign In</button>
+                </form>
+                <div class="scrapbook-element"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard-page" class="page">
+        <nav class="navbar">
+            <div class="nav-logo">Thrift<span>Shop</span></div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Produk</a>
+                <button id="logout-btn" class="btn-logout">Logout</button>
+            </div>
+        </nav>
+
+        <header class="dashboard-header">
+            <h1 class="reveal">The Thrift Collection</h1>
+            <div class="search-container reveal">
+                <input type="text" placeholder="Cari outlet atau gaya favoritmu...">
+                <button>Search</button>
+            </div>
+        </header>
+
+        <main class="product-grid reveal">
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=500" alt="Outlet">
+                </div>
+                <div class="card-content">
+                    <h3>Vintage Vibes</h3>
+                    <p>Koleksi jaket denim dan kaos grafis tahun 90-an yang autentik.</p>
+                    <button class="btn-detail">Lihat Detail</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500" alt="Outlet">
+                </div>
+                <div class="card-content">
+                    <h3>Classic Retro</h3>
+                    <p>Elegansi gaya retro dengan sentuhan modern untuk tampilan chic.</p>
+                    <button class="btn-detail">Lihat Detail</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=500" alt="Outlet">
+                </div>
+                <div class="card-content">
+                    <h3>Earth Tone Co.</h3>
+                    <p>Spesialis pakaian warna bumi yang menenangkan dan nyaman.</p>
+                    <button class="btn-detail">Lihat Detail</button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
